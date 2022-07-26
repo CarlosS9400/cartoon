@@ -1,0 +1,38 @@
+/*
+* {
+    border: 1px solid red;
+}
+*/
+
+body {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    width: 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    width: 90%;
+    height: 12em;
+    object-fit: cover;
+}
+
+p {
+    text-align: left;
+}
