@@ -1,8 +1,8 @@
-/*
-* {
+
+/* * {
     border: 1px solid red;
-}
-*/
+}*/
+
 
 body {
     text-align: center;
@@ -16,23 +16,35 @@ body {
 
 .column {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .row {
-    width: 18%;
+    width: 90%;
+    padding: 0.5em;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 img {
     width: 90%;
     height: 12em;
     object-fit: cover;
+    object-position: center;
 }
 
 p {
     text-align: left;
+    width: 90%;
+}
+
+@media (min-width: 750px) {
+    .column {
+      flex-direction: row;
+    }
 }
